@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    // 1. Оголосіть змінні str, num, flag и txt зі значеннями «Привіт», 123, true, «true».
+
+    let str = "Привіт"
+    console. log (typeof str);
+
+    let num = 123
+    console. log (typeof num)
+
+    let flag = true
+    console. log (typeof flag)
+
+    let txt = "true"
+    console. log (typeof txt)
+
+    // Оголосіть змінні a1, a2, a3, a4, a5. За домогою 3х математичних оператцій
+
+    function a1 (x, y, z) {
+        let result = x * y - z;
+        return result;
+    }
+    let r1 = a1(8, 5, 6)
+    console. log(r1);
+
+    function a2 (x, y, z) {
+        let result = x / y + z;
+        return result;
+    }
+    let r2 = a2 (60, 10, 6)
+    console. log(r2);
+
+    function a3 (x, y, z) {
+        let result = (x + y) * z;
+        return result;
+    }
+    let r3 = a3 (7, 4, 6)
+    console. log(r3);
+
+    function a4 (x, y, z) {
+        let result = x * y / z;
+        return result;
+    }
+    let r4 = a4(20, 9, 2)
+    console. log(r4);
+
+    function a5 (x, y, z) {
+        let result = x * y - z;
+        return result;
+    }
+    let r5 = a5 (55, 7, 298)
+    console. log(r5);
+
+    // 3.  Створіть змінні a6, a7, a8, a9, a10. Запишіть в них результати виразів:
+    //     5 % 3,
+    //     3 % 5,
+    //     5 + '3',
+    //     '5' - 3,
+    //     75 + 'кг'
+
+    function a6 (k, l) {
+        let result = k % l;
+        return result;
+    }
+    let g1 = a6 (5, 3)
+    console. log(g1)
+
+    function a7 (n, m) {
+        let result = n % m;
+        return result;
+    }
+    let g2 = a7 (3, 5)
+    console. log(g2)
+
+    function a8 (k, s) {
+        let result = k + s;
+        return result;
+    }
+    let g3 = a8 (5, '3')
+    console. log(g3)
+
+    function a9 (t, d) {
+        let result = t - d;
+        return result;
+    }
+    let g4 = a9 ('5', 3)
+    console. log(g4)
+
+    function a10 (c, a) {
+        let result = c + a;
+        return result;
+    }
+    let g5 = a8 (75, 'кг')
+    console. log(g5)
+
+    // 4. Напишіть код, який вираховує площу прямокутника висотою 23см. (змінна height) та шириною 10см (змінна width).
+    // Значееня площі зберігати в змінній s.
+
+    function area (height, width) {
+        let result = (height * width)
+        return result;
+    }
+    let s = area(23, 10)
+    console. log(s)
+
+    // 5.  Напиши код, который находит объем цилиндра высотой 10м (переменная heightC) и диаметром основания 4м (dC),
+    //     результат поместите в переменную v.
+
+    function volume (dC, heightC) {
+        let result = 3.14 * dC**2 *  heightC
+        return result;
+    }
+    let v = volume(4, 10)
+    console. log(v)
+
+    // 6. У прямоугольного треугольника две стороны n (со значением 3) и m (со значением 4).
+    // Найдите гипотенузу k по теореме Пифагора (нужно использовать функцию Math.pow(число, степень) или оператор возведения в степень ** ).
+
+    let n = 3;
+    let m = 4;
+    let k = (Math.pow(n, 2))+(Math.pow(m, 2));
+    console.log(Math.sqrt(k));
+
+  //   9. Создать 4 переменные с использованием ключевого слова let с именами str1, str2, str3, concatenation.
+  //       Переменной str1 присвоить фразу ‘Кто ‘, str2 – ‘ты ‘, str3 – ‘такой?’
+  // Локальной переменной concatenation присвоить результат конкатенации 3-х строк: str1, str2, str3.
+  //       Вывести в документ содержимое переменной concatenation спомощью document.write
+
+    let str1;
+    str1 = 'Хто';
+    let str2;
+    str2 = 'ти';
+    let str3;
+    str3 = 'такий'
+    let concatenation = ( str1 + str2 + str3 );
+    document.write(concatenation)
+
+    // 10. Подумайте Какие значения выведет в окно браузера следующий фрагмент кода?  и почему?
+    let str0 = "20";
+    let a = 5;
+    document.write(str0 + a + "<br/>");
+    console.log(str0 + a + "<br/>")
+    document.write(str0 - a + "<br/>");
+    console.log(str0 - a + "<br/>")
+    document.write(str0 * "2" + "<br/>");
+    console.log(str0 * "2" + "<br/>")
+    document.write(str0 / 2 + "<br/>");
+    console.log(str0 / 2 + "<br/>")
+
+    // 11.С помощью окна ввода, вызываемого методом prompt, сделать сложение двух чисел, а вывод результата при помощи метода alert
+    // let t = 5;
+    // let f =3;
+    // prompt(`3 + 5`);
+    // alert(t+f)
+
+    // 12. С помощью окна ввода, вызываемого методом prompt, пользователь последовательно выводит имя, фамилию и возраст, а вам не обходимо вывести строку такого вида
+    // Доброго вечера Иван Иванов, мои поздравления что вам 32 , а вывод результата при помощи метода alert
+
+    // prompt("Доброго вечора Іван Іванов");
+    // prompt("мої вітання що вам 32");
+    // alert("Доброго вечора Іван Іванов, мої вітання що вам 32")
+</script>
+</body>
+</html>
